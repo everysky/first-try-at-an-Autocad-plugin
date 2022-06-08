@@ -58,7 +58,7 @@ namespace test_Ribbon
             };
 
             ///////////////////////////////////////////////////////////////
-            //////////I don't understand everything. need to investigate 
+            //////////I don't understand everything in here. I need to investigate 
             ///////////////////////////////////////////////////////////////
             // Create a Command Item that the Dialog Launcher can use,
             // for this test it is just a place holder.
@@ -68,7 +68,6 @@ namespace test_Ribbon
             // assign the Command Item to the DialgLauncher which auto-enables
             // the little button at the lower right of a Panel
             rps.DialogLauncher = rci;
-            ///////////////////////////////////////////////////////////////
 
             // some documentation for later
             RibbonButton rb = new RibbonButton();
@@ -85,6 +84,7 @@ namespace test_Ribbon
             rb2.ShowText = true;
             rb2.CommandHandler = new RibbonButtonCommandHandler();
             rb2.CommandParameter = "PS_InvokeAComic ";
+            ///////////////////////////////////////////////////////////////
 
             //Add the Button to the Tab
             rps.Items.Add(rb);
